@@ -39,8 +39,11 @@ const App = () => {
       quality: 1,
     });
 
+        console.log(result);
+
     if (!result.cancelled) {
-      setFotoSelecionada(result.uri);
+
+      setFotoSelecionada(result.assets[0].uri);
     }
   };
 
